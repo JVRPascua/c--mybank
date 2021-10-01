@@ -71,25 +71,7 @@ namespace IT22_OE2
             clear();
         }
 
-        protected void btnRetrieve_Click(object sender, EventArgs e)
-        {
-            string con = "Server =localhost; Uid=root; password= ; persistSecurityInfo=True; database=mybank_db; SslMode=none";
-            MySqlConnection mycon = new MySqlConnection(con);
-            DataTable view = new DataTable();
-            MySqlCommand com = null;
-            try {
-                com = new MySqlCommand("select * from depositors_tbl",mycon);
-                mycon.Open();
-                view.Load(com.ExecuteReader());
-                mycon.Close();
-            }
-            catch (Exception ex) {
-                Response.Write("<script>alert('" + ex.Message + "') </script>");
-                mycon.Close();
-            }
-            GridView1.DataSource = view;
-            GridView1.DataBind();
-        }
+       
 
         
     }

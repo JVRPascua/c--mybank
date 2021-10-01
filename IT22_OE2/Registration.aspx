@@ -151,8 +151,7 @@
 
                 <tr>
                     <td class="auto-style1">
-                        <asp:Button ID="btnRetrieve" runat="server" Text="Retrieve" Width="383px" OnClick="btnRetrieve_Click" />
-                    </td>
+                        
                     <td>
                         <asp:Button ID="btnRegister" runat="server" OnClick="btnRegister_Click" Text="Register" Width="383px" />
                     </td>
